@@ -1,9 +1,16 @@
 import Addrecipe from "./components/Addrecipe.jsx"
 
-function App() {
+function App(){
+  let detail=[{
+title:'food',
+ingredients:'rice',
+title:'biriyani',
+imageUrl:'url'
+  }
+  ]
  return (
   <>
-  <Addrecipe/>
+  <Addrecipe title={detail.title}/>
   </>
  )
 }
